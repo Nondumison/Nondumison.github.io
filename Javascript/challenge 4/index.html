@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>challenge4</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" width="width=width-device intional scale=1.0"/>
+	<link rel="stylesheet" href="styles.css" type="text/css"> 
+
+	<script >
+		function hours() {
+
+			/*var min= min % 60;*/
+			var givenNumber= document.getElementById("time").value;
+
+			var hour= (givenNumber/60) .toFixed(0);
+			console.log("Time is " +hour+ " hour(s) ");
+
+			var min=(givenNumber % 60).toFixed(0);
+			console.log(" And " +min+ " minute(s) ");
+		}
+		
+
+	</script>
+</head>
+<body>
+	<h1>Challenge 4</h1>
+	<label>Time is</label>
+	<input type="text" id="time">
+	<input type="button" name="button"  value="Time" onclick="hours();"></input>
+</body>
+</html>

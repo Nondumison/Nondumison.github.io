@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge 3</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" width="width=width-device intional scale=1.0"/> 
+	<link rel="stylesheet" href="styles.css" type="text/css"> 
+
+	<script>
+		function biggest() {
+
+			var a= document.getElementById("first").value;
+			var b= document.getElementById("Second").value;
+			var c= document.getElementById("third").value;
+
+			if( a> b && a> c){
+
+				console.log("The highest number is "+a);
+				return a;
+
+			}
+			else if (b > a  && b> c) {
+				console.log("The highest number is "+b);
+				return b;
+			}
+			else{
+				return console.log("The highest number is "+c);
+				
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>CHALLENGE 3</h1>
+	<input type="text" id="first">
+	<input type="text" id="Second">
+	<input type="text" id="third">
+
+	<input type="button" name="button" value="Highest number" onclick="biggest();">
+</body>
+</html>

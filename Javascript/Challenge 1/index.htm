@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Challenge 1</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" width="width=width-device intional scale=1.0"/> 
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<!--<link rel="javascript" href="javascript.js" type="text/javascript">-->
+
+
+
+</head>
+<body>
+	<script>
+		
+		function checknum() {
+
+
+
+		var x =parseInt(document.getElementById("xnum").value);
+		var y =parseInt(document.getElementById("ynum").value);
+	
+		
+		if (x == 75) {
+			console.log(x);
+
+			return true;
+		     }
+
+		else if ((x+y) == 75){
+			console.log(x + y);
+			return true;
+			}
+
+		else if (y == 75){
+			console.log(y);
+			return true;
+			}
+
+			
+			
+
+
+		}
+
+	</script>
+
+	<h1>Challenge 1</h1>
+		
+	<label>calculate numbers</label>
+	<input type="text" id="xnum"/>
+	<input type="text" id="ynum"/>
+
+	<input type="Button"  name="calculate" value = "Calculate" onclick="checknum();">
+</body>
+</html>
+</html>
