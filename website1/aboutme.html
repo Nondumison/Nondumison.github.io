@@ -1,0 +1,121 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<style >
+	* {
+  				margin: 0;
+  				padding: 0;
+  				border: 0;
+  			}
+ 
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(auto, auto));
+}
+
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.panel{
+	grid-column: 1;
+	grid-row: 2;
+
+}
+
+.main{
+	grid-column:2;
+    grid-row:  2;
+}
+
+
+.footer {
+    grid-column: 1 / -1;
+}
+	/*#container{
+
+			display: grid;
+			width: 100%;
+   			max-width: 960px;
+    		margin: 0 auto;
+    	}
+    	  @media (min-width: 550px) {
+
+  	  #container {
+      display: grid;
+      grid-template-columns: repeat(2, [col] 1fr );
+      grid-template-rows: repeat(5, [row] auto) ;
+      grid-column-gap: 1em;
+      grid-row-gap: 15px;
+    }*/
+    .header {
+    	font-family: sans-serif;
+		font-size: 100%;
+		display:  inline-block;
+		float: left;
+		list-style: none;
+		padding: 10px;
+
+      grid-column: col / span 12;
+      grid-row: row ;
+    }
+
+
+    .main {
+  
+     	grid-column: 1 ;
+        grid-row: 2 ;
+    }
+
+    .panel {
+   
+     grid-column: 2;
+        grid-row: 2;
+    }
+     .footer {
+    
+      grid-column: col / span 12;
+      grid-row: row 3 ;
+    }
+
+	</style>
+
+</head>
+<body>
+	<div id="container">
+	<header class="header">
+			
+			<nav>
+				<ul>
+					<li><a href="#" class="current">About me</li>
+					<li><a href="portfolio.html">Home</li>
+					<li><a href="contact.html">Contact</li>	
+				</ul>
+			</nav>
+		</header>
+		<h1>About me</h1><br>
+
+			<div class="picture">
+				<img src="pic.png" style="height: 80%;  width: 50%;">
+			</div>
+			<div class="main">
+				<p> Hello, I am Nondumiso Nkosi, I'm currently doing a coding/web development learnership at Umuzi academy, I use HTML 5, CSS 3 and JavaScript. I build websites, I enjoy it and do it well.<br>
+           		 I am observant and curious. I enjoy work that challenges me to learn new things no matter how ahead I may be and stretch me in the new different direction. I do my best to stay on top and make sure that I gain more skills and be more productive. With Technology I always see diverse possibilities and always willing to break boundaries.<br>I personally believe that every problem has a solution, be it big or small if you are willing to give it your all you will win.</p>
+			</div>
+		</div>
+
+	</div>
+</div><!--Div container-->
+	<footer>
+			<div class="footer">
+				<p>&copy; copyright 2018 written by Nondumiso Nkosi</p>
+			</div>
+	</footer>
+</body>
+</html>

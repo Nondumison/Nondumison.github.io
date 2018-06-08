@@ -1,0 +1,136 @@
+<html>
+	<head>
+		
+		<title>my website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		
+		<link href="css/font-awesome.min.css" rel="style"/>
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  		<style>
+  			* {
+  				margin: 0;
+  				padding: 0;
+  				border: 0;
+  			}
+			#container{
+				display: grid;
+				/*height: 0 auto;*/
+				width: 100%;
+				/*grid-template-rows: 50px 1fr 50px;*/
+				/*display: grid;
+				height: 600px;
+				grid-template-rows: 50px 1fr 50px;*/
+												
+			}
+			#wrapper{
+				display: inline-grid;
+				float: right;
+			}
+			/*#slider{
+				grid-auto-columns: auto;
+				grid-template-areas: auto-fill;
+						
+			}*/
+			#footer{
+				background-color: blue;
+			}
+			.index-banner {
+				position: fixed;
+				left: 30%;
+				bottom: 50%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--<header>
+			<a href="portfolio.html">Nondumiso</a>
+			<nav>
+				<ul>
+					<li><a href="aboutme.html">About me</li>
+					<li><a href="contact.html">Contact</li>	
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="index-banner">
+				<h2>Nondumiso Nkosi <br>web developer</h2>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="aboutme.html">About me</li>
+					<li><a href="contact.html">Contact</li>	
+				</ul>
+			</nav>
+		</footer>-->
+
+		<div id="container">
+			<header>
+				<div id="header-inner">
+					<nav>
+						<a href="#" id="menu-icon"></a>
+						<ul>
+							<li><a href="portfolio.html" class="current">Home</a></li>
+							<li><a href="aboutme.html">About me</a></li>
+							<li><a href="contact.html">Contact</a></li>	
+						</ul>
+					</nav>
+				</div>
+			</header>
+			
+				<!--<script src="js/jquery.bxslider.min.js"></script>
+				<div class="slide-wrap">-->
+			<div class="slider">    
+              	<div><li><img src="nice.jpg" style="height:490px; width: 100%" ></li></div>
+              	<div><li><img src="pink.jpg" style="height:490px; width: 100%;" ></li></div>
+             	<div> <li><img src="coffe.jpeg" style="height:490px; width: 100%;" ></li></div>
+ 			</div>
+ 			<section class="index-banner">
+				<h2> Nondumiso Nkosi <br/>web developer/></h2>
+			</section>
+			
+		<footer>
+			<div class="second">
+				<p>&copy; copyright 2018 written by Nondumiso Nkosi</p>
+			</div>
+		</footer>
+	</div><!--div container-->
+	
+	<script>
+					$(document).ready(function(){
+	          		$('.slider').bxSlider({
+	            	    mode: 'fade',
+			            captions: false,
+			            auto: true,
+			            pager: false,
+			          });
+			          $('.slider').bxSlider({
+			            pager:false,
+			            captions: true,
+			            maxSlides: 3,
+			            minSlides: 1,
+			            SlideWidth: 230,
+			            SlideMargin: 10
+			          });
+			          $('.slider').bxSlider({
+			            mode: 'fade',
+			            captions: false,
+			            auto: true,
+			            pager: false,
+			            controls: false,
+			          });
+			          });
+
+				</script>
+	</body>
+
+</html>
