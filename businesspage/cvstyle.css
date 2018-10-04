@@ -1,0 +1,60 @@
+footer{
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+
+form{
+  padding-left: 10%;
+  padding-right:10%;
+  background-color:white; 
+}
+.side-nav{
+      height: 100%;
+      width: 0;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left:  0;
+      background-color: #111;
+      opacity:0.9;
+      overflow-x:hidden;
+      padding-top: 60px;  
+      transition: 0.5s;
+    }
+    .side-nav a{
+      padding: 10px 10px 10px 450px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ccc;
+      display: block;
+      transition: 0.3s;
+    }
+    .side-nav a:hover{
+      color: #fff;
+    }
+    .side-nav .btn-close{
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+.slide{
+
+}
+.first{
+   background-color: green;
+   color:white;
+   text-align:center;
+   padding-top:10px;
+   border-bottom: 20px;
+   border-color: white;
+ }
+ .slide table{
+
+ }
+ .slider .bx-controls-direction{
+ 	display: none;
+ }

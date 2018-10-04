@@ -1,0 +1,164 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inintial-scale=1.0">
+	<mata http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="cvstyle.css">
+	<title>CV|Resume</title>
+
+</head>
+<body>
+	<div class="container">
+	<div class="nav">
+		<span class="open-slide">
+				<a href="#" onclick="openSlideMenu()">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5" stroke="green" stroke-width="3"/>
+						<path d="M0,14 30,14" stroke="green" stroke-width="3"/>
+						<path d="M0,23 30,23" stroke="green" stroke-width="3"/>
+					</svg>
+				</a>
+
+			</span>
+			<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<hr class="PageBreak u-spaceBottom">
+			<a href="home.html">Home</a>
+			<a href="business.html">Business</a>
+			<a href="mentor.html">Mentorship</a>
+			<a href="career.html">Career Tips</a>
+			<a href="#">Job seekers</a>
+			<a href="#">News</a>
+			<a href="#">Q and A</a>
+			<hr class="PageBreak u-spaceBottom">
+		</div><!--side-nav-->
+	</div><!--nav-->
+<form action="#" name="cvForm" onsubmit="return validate()">
+
+<tr><h2>CREATE YOUR CV</h2></tr>
+	<fieldset>
+		<legend><h3><b>Personal Details</b></h3></legend>
+		<table>
+		<tr>
+		<td>Name:</td>
+		<td><input type="text" size="30"></input></td>
+		</tr>
+
+		<tr>
+		<td>Surname:</td>
+		<td><input type="text" size="30"></input></td>
+		</tr>
+
+		<tr>
+		<td>Date of birth:</td>
+		<td><input type="text" size="30"></input></td>
+		</tr>
+
+		<tr>
+		<td>Nationality:</td>
+		<td><input type="text" size="30"></input></td>
+		</tr>
+
+		<tr>
+		<td>Home Address:</td>
+		<td><textarea></textarea></td>
+		</tr>
+	</table>
+</fieldset>
+<fieldset>
+	<table>
+	<legend><h3><bold>Educational History<bold></h3></legend>
+	<tr>
+	<td>Highest Grade Passed:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+
+	<tr>
+	<td>Year Completed:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+	<tr>
+	<td>Tertiary Level Educational:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+	<td>Status:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+
+</table>
+	</fieldset>
+<fieldset>
+	<table>
+	<legend><h3><bold>Career History<bold></h3></legend>
+	<tr>
+	<td>Company:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+
+	<tr>
+	<td>Occupation:</td>
+	<td><textarea></textarea></td>
+	</tr>
+	<tr>
+	<td>Duties:</td>
+	<td><textarea></textarea></td>
+	</tr>
+	<tr>
+	<td>Company:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+
+	<tr></tr>
+	<tr>
+	<td>Occupation:</td>
+	<td><textarea></textarea></td>
+	</tr>
+
+	<tr>
+	<td>Duties:</td>
+	<td><textarea></textarea></td>
+	</tr>
+</table>
+	</fieldset>
+	<fieldset>
+	<table>
+	<legend><h3><bold>Career Highlights</bold></h3></legend>
+	<tr>
+	<td>Date:</td>
+	<td><input type="text" size="30"></input></td>
+	</tr>
+
+	<tr>
+	<td>Description:</td>
+	<td><textarea></textarea></td>
+	</tr>
+</table>
+</fieldset>
+<input type="submit" name="submit" value="Submit">
+<input type="reset" name="reset" value="Reset">
+</form>
+<div class="footer">
+		<p>&copy;copyright 2018</p>
+			
+
+	</div><!--footer-->
+</div>
+<script >
+  
+    function openSlideMenu(){
+      
+      document.getElementById('side-menu').style.width='100%';
+       document.getElementById('side-menu').style.display='block';
+    
+
+    }
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width='0';
+
+    }
+  
+</script>
+</body>
+
+</html>

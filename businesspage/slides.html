@@ -1,0 +1,121 @@
+		
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<title></title>
+</head>
+<body>
+		<div class="nav">
+		<span class="open-slide">
+				<a href="#" onclick="openSlideMenu()">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5" stroke="grey" stroke-width="3"/>
+						<path d="M0,14 30,14" stroke="grey" stroke-width="3"/>
+						<path d="M0,23 30,23" stroke="grey" stroke-width="3"/>
+					</svg>
+				</a>
+
+			</span>
+			<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<hr class="PageBreak u-spaceBottom">
+			<a href="#">Home</a>
+			<a href="business.html">Business</a>
+			<a href="mentor.html">Mentorship</a>
+			<a href="#">Contact us</a>
+			<a href="#">Services</a>
+			<a href="#">News</a>
+			<a href="#">Q and A</a>
+			<hr class="PageBreak u-spaceBottom">
+		</div><!--side-nav-->
+	</div><!--nav-->
+		<div class="slider">    
+              	<div><li><img src="nice.jpg" style="height:490px; width: 100%" ></li></div>
+              	<div><li><img src="pink.jpg" style="height:490px; width: 100%;" ></li></div>
+             	<div> <li><img src="coffe.jpeg" style="height:490px; width: 100%;" ></li></div>
+ 			</div>
+
+ 			<style >
+ 				
+
+ 			.side-nav{
+			height: 100%;
+			width: 0;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left:  0;
+			background-color: #111;
+			opacity:0.9;
+			overflow-x:hidden;
+			padding-top: 60px;  
+			transition: 0.5s;
+		}
+		.side-nav a{
+			padding: 10px 10px 10px 450px;
+			text-decoration: none;
+			font-size: 22px;
+			color: #ccc;
+			display: block;
+			transition: 0.3s;
+		}
+		.side-nav a:hover{
+			color: #fff;
+		}
+		.side-nav .btn-close{
+			position: absolute;
+			top: 0;
+			right: 22px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+.slider .bx-controls-direction{
+	display: none;
+}
+
+
+ 			</style>
+	<script>
+					$(document).ready(function(){
+	          		$('.slider').bxSlider({
+	            	    mode: 'fade',
+			            captions: false,
+			            auto: true,
+			            pager: false,
+			          });
+			          $('.slider').bxSlider({
+			            pager:false,
+			            captions: true,
+			            maxSlides: 3,
+			            minSlides: 1,
+			            SlideWidth: 230,
+			            SlideMargin: 10
+			          });
+			          $('.slider').bxSlider({
+			            mode: 'fade',
+			            captions: false,
+			            auto: true,
+			            pager: false,
+			            controls: false,
+			          });
+			          });
+					function openSlideMenu(){
+			
+			document.getElementById('side-menu').style.width='100%';
+			 document.getElementById('side-menu').style.display='block';
+		
+
+		}
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width='0';
+
+		}
+
+			</script>
+</body>
+</html>
+		

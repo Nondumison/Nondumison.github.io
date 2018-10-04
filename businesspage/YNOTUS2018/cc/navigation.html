@@ -1,0 +1,410 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inintial-scale=1.0">
+	<mata http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="ccstyle.css">
+	<title>navigation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body{
+			font-family: "Arial", Serif;
+			background-color: #f4f4f4;
+			/*overflow-x: hidden;*/
+			/*different page*/
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		/* logo class*/
+		.logo{
+			position: fixed;
+			float: left;
+			text-align: center;
+			color: #f2f2f2;
+			font-weight: bold;
+			font-size: 17px;
+		}
+		.navbar{
+			position: fixed;
+			background-color: #3b5998;
+			overflow: hidden;
+			height: 63px;
+			width: 100%;
+		}
+		/* p{
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			font-size: 17px;
+		}*/
+		.navbar a{
+			float: right;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.navbar ul{
+			margin: 8px 0 0 0;
+			list-style: none;
+		}
+		.navbar a:hover{
+			background-color: #ddd;
+			color: #000;
+
+		}
+		.side-nav{
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			right: 0;
+			background-color: #111;
+			opacity:0.9;
+			overflow-x:hidden;
+			padding-top: 60px;  
+			transition: 0.5s;
+		}
+		.side-nav a{
+			padding: 10px 10px 10px 30px;
+			text-decoration: none;
+			font-size: 22px;
+			color: #ccc;
+			display: block;
+			transition: 0.3s;
+		}
+		.side-nav a:hover{
+			color: #fff;
+		}
+		.side-nav .btn-close{
+			position: absolute;
+			top: 0;
+			right: 22px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		footer{
+			background-color: #3b5998;
+			overflow: hidden;
+			height: 63px;
+			
+			
+		}
+		footer p{
+			text-align: center;
+			color: #fff;
+			/*padding: 14px 16px;*/
+			font-size: 17px;
+		}
+		@media(max-width:568px){
+			.navbar-nav{
+				display: none;
+			}
+		}
+		@media(min-width:568px){
+			.open-slide{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="navbar">	
+			<div class="logo">
+				<p>Moolah Currency Converter</p>
+			</div>
+			<span class="open-slide">
+				<a href="#" onclick="openSlideMenu()">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+						<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+						<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+					</svg>
+				</a>
+
+			</span>
+			<ul class="navbar-nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Q and A</a></li>
+			</ul>-->
+		</nav>
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">News</a>
+			<a href="#">Q and A</a>
+		</div><!--side-nav-->
+		<section class="intro">
+
+<div class="inner">
+
+<div class="content">
+<h1>Moola Currency Converter</h1>
+<p style ="color: white;">Use Moola currency converter to convert from one currency to another</p>
+<div class = "myTable" align="center">
+    <table>
+
+<tr>
+
+  <td><input id="fromAmount" size="20" type="text" value="1" onkeyup="convertCurrency();">
+  <p class="amount">Amount</p>
+  </td>
+  <td><select id="from" onchange="convertCurrency();">
+  <option value="AUD">Austrialian Dollar (AUD)</option>
+  <option value="BGN">Bulgarian Lev (BGN)</option>
+  <option value="CAD">Canadian Dollar (CAD)</option>
+  <option value="CHF">Swiss Franc (CHF)</option>
+  <option value="DKK">Danish Krone (DKK)</option>
+  <option value="GBP">Pound Sterling (GBP)</option>
+  <option value="ILS" selected>Israeli New Shekel (ILS)</option>
+  <option value="AUD">Austrialian Dollar (AUD)</option>
+  <option value="INR">Indian Rupee (INR)</option>
+  <option value="ZAR">South African Rand (ZAR)</option>
+  <option value="KES">Kenyan Shilling (KES)</option>
+  <option value="EEK">Estonian Kroon (EEK)</option>
+  <option value="DZD">Algerian Dinar (DZD)</option>
+  <option value="MKD">Macedonian Denar (MKD)</option>
+  <option value="PKR">Pakistani Rupee (PKR)</option>
+  <option value="QAR">Qatari Rial (QAR)</option>
+  <option value="USD">United States Dollar (USD)</option>
+  <option value="UYU">Uruguayan Peso (UYU)</option>
+  <option value="VND">Vietnamese Dong (VND)</option>
+
+  </select>
+</td>
+</tr>
+
+
+<tr>
+<td><input id="toAmount"size="20" height="50px" placeholder="0,00" disabled type="text"/>
+<p class="output">Output</p>
+</td>
+  <td><select id="to" onchange="convertCurrency();">
+<option value="AUD">Austrialian Dollar (AUD)</option>
+<option value="BGN">Bulgarian Lev (BGN)</option>
+<option value="CAD">Canadian Dollar (CAD)</option>
+<option value="CHF">Swiss Franc (CHF)</option>
+<option value="DKK">Danish Krone (DKK)</option>
+<option value="GBP">Pound Sterling (GBP)</option>
+<option value="ILS">Israeli New Shekel (ILS)</option>
+<option value="AUD" >Austrialian Dollar (AUD)</option>
+<option value="INR">Indian Rupee (INR)</option>
+<option value="ZAR">South African Rand (ZAR)</option>
+<option value="KES">Kenyan Shilling (KES)</option>
+<option value="EEK">Estonian Kroon (EEK)</option>
+<option value="DZD">Algerian Dinar (DZD)</option>
+<option value="MKD">Macedonian Denar (MKD)</option>
+<option value="PKR">Pakistani Rupee (PKR)</option>
+<option value="QAR" selected>Qatari Rial (QAR)</option>
+<option value="USD">United States Dollar (USD)</option>
+<option value="UYU">Uruguayan Peso (UYU)</option>
+<option value="VND">Vietnamese Dong (VND)</option>
+</select>
+
+</td>
+
+</tr>
+</td>
+</tr>
+
+    </table>
+	</div>
+
+	<div class="mobileTable">
+		<table>
+			<tr>
+				<td>
+				<p class="amount">Amount</p>
+				<input id="fromAmount" size="24" type="text" value="1" onkeyup="convertCurrency();">
+				<select id="from" onchange="convertCurrency();">
+				<option value="AUD">Austrialian Dollar (AUD)</option>
+				<option value="BGN">Bulgarian Lev (BGN)</option>
+				<option value="CAD">Canadian Dollar (CAD)</option>
+				<option value="CHF">Swiss Franc (CHF)</option>
+				<option value="DKK">Danish Krone (DKK)</option>
+				<option value="GBP">Pound Sterling (GBP)</option>
+				<option value="ILS" selected>Israeli New Shekel (ILS)</option>
+				<option value="AUD">Austrialian Dollar (AUD)</option>
+				<option value="INR">Indian Rupee (INR)</option>
+				<option value="ZAR">South African Rand (ZAR)</option>
+				<option value="KES">Kenyan Shilling (KES)</option>
+				<option value="EEK">Estonian Kroon (EEK)</option>
+				<option value="DZD">Algerian Dinar (DZD)</option>
+				<option value="MKD">Macedonian Denar (MKD)</option>
+				<option value="PKR">Pakistani Rupee (PKR)</option>
+				<option value="QAR">Qatari Rial (QAR)</option>
+				<option value="USD">United States Dollar (USD)</option>
+				<option value="UYU">Uruguayan Peso (UYU)</option>
+				<option value="VND">Vietnamese Dong (VND)</option>
+				</select>
+				<select id="mto" onchange="convertCurrency();">
+				<option value="AUD">Austrialian Dollar (AUD)</option>
+				<option value="BGN">Bulgarian Lev (BGN)</option>
+				<option value="CAD">Canadian Dollar (CAD)</option>
+				<option value="CHF">Swiss Franc (CHF)</option>
+				<option value="DKK">Danish Krone (DKK)</option>
+				<option value="GBP">Pound Sterling (GBP)</option>
+				<option value="ILS">Israeli New Shekel (ILS)</option>
+				<option value="AUD" >Austrialian Dollar (AUD)</option>
+				<option value="INR">Indian Rupee (INR)</option>
+				<option value="ZAR">South African Rand (ZAR)</option>
+				<option value="KES">Kenyan Shilling (KES)</option>
+				<option value="EEK">Estonian Kroon (EEK)</option>
+				<option value="DZD">Algerian Dinar (DZD)</option>
+				<option value="MKD">Macedonian Denar (MKD)</option>
+				<option value="PKR">Pakistani Rupee (PKR)</option>
+				<option value="QAR" selected>Qatari Rial (QAR)</option>
+				<option value="USD">United States Dollar (USD)</option>
+				<option value="UYU">Uruguayan Peso (UYU)</option>
+				<option value="VND">Vietnamese Dong (VND)</option>
+				</select>
+				<p class="output">Output</p>
+				<input class="mOutput" id="toAmount"size="24" height="50px" placeholder="0,00" disabled type="text"/>
+
+				</td>
+
+
+
+
+			</tr>
+
+		</table>
+	</div>
+
+</div>
+</div>
+</section>
+<body>
+<div class="container-fluid">
+<h2 class ="section-title"><strong>Currency List</strong></h2>
+<table class = "table1">
+  <tr>
+    <th>Flag</th>
+    <th>Country</th>
+    <th>Curriencies</th>
+  </tr>
+  <tr>
+    <td><img src="flags/au.png" style="width:70px;height:50px;"></td>
+    <td>Australia</td>
+    <td>Austrialian Dollar (AUD)</td>
+  </tr>
+  <tr>
+    <td><img src="flags/bg.png" style="width:70px;height:50px;"></td>
+    <td>Bulgaria</td>
+    <td>Bulgarian Lev (BGN)</td>
+  </tr>
+  <tr>
+    <td><img src="flags/ca.png" style="width:70px;height:50px;"></td>
+    <td>Canda</td>
+    <td>Canadian Dollar (CAD)</td>
+  </tr>
+  <tr>
+    <td><img src="flags/sw.png" style="width:70px;height:50px;"></td>
+    <td>Switzerland</td>
+    <td>Swiss Franc (CHF)</td>
+  </tr>
+  <tr>
+    <td><img src="flags/dn.png" style="width:70px;height:50px;"></td>
+    <td>Denmark</td>
+    <td>Danish Krone (DKK)</td>
+  </tr>
+  <tr>
+    <td><img src="flags/unk.png" style="width:70px;height:50px;"></td>
+    <td>United Kingdom</td>
+    <td>Pound Sterling (GBP)</td>
+  </tr>
+<tr>
+    <td><img src="flags/is.png" style="width:70px;height:50px;"></td>
+    <td>Israel</td>
+    <td>Israeli New Shekel (ILS)</td>
+  </tr>
+<tr>
+    <td><img src="flags/in.png" style="width:70px;height:50px;"></td>
+    <td>Republic of India</td>
+    <td>Indian Rupee (INR)</td>
+  </tr>
+<tr>
+    <td><img src="flags/sa.png" style="width:70px;height:50px;"></td>
+    <td>Republic of South Africa</td>
+    <td>South African Rand (ZAR)</td>
+  </tr>
+<tr>
+    <td><img src="flags/ky.png" style="width:70px;height:50px;"></td>
+    <td>Republic of Kenya</td>
+    <td>Kenyan Shilling (KES)</td>
+  </tr>
+<tr>
+    <td><img src="flags/es.png" style="width:70px;height:50px;"></td>
+    <td>Republic of Estonia</td>
+    <td>Estonian Kroon (EEK)</td>
+  </tr>
+<tr>
+   <td><img src="flags/alg.png" style="width:70px;height:50px;"></td>
+    <td>People's Democratic Republic of Algeria</td>
+    <td>Algerian Dinar (DZD)</td>
+  </tr>
+<tr>
+    <td><img src="flags/mac.png" style="width:70px;height:50px;"></td>
+    <td>Republic of Macedonia</td>
+    <td>Macedonian Denar (MKD)</td>
+  </tr>
+<tr>
+    <td><img src="flags/pkr.png" style="width:70px;height:50px;"></td>
+    <td>Islamic Republic of Pakistan</td>
+    <td>Pakistani Rupee (PKR)</td>
+  </tr>
+<tr>
+   <td><img src="flags/qt.png" style="width:70px;height:50px;"></td>
+    <td>State of Qatar</td>
+    <td>Qatari Rial (QAR)</td>
+  </tr>
+<tr>
+    <td><img src="flags/usd.png" style="width:70px;height:50px;"></td>
+    <td>United States of America</td>
+    <td>United States Dollar (USD)</td>
+  </tr>
+<tr>
+    <td><img src="flags/uyu.png" style="width:70px;height:50px;"></td>
+    <td>Oriental Republic of Uruguay</td>
+    <td>Uruguayan Peso (UYU)</td>
+  </tr>
+<tr>
+    <td><img src="flags/vt.png" style="width:70px;height:50px;"></td>
+    <td>Socialist Republic of Vietnam</td>
+    <td>Vietnamese Dong (VND)</td>
+  </tr>
+</table>
+
+	<footer>
+		<p>&copy;copyright 2018 created by moolah currencies</p>
+	</footer>
+			
+	</div><!--Wrapper-->
+	<script>
+		function openSlideMenu(){
+			
+			document.getElementById('side-menu').style.width='43%';
+			 document.getElementById('side-menu').style.display='block';
+		
+
+		}
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width='0';
+
+		}
+	</script>
+</body>
+</html>
