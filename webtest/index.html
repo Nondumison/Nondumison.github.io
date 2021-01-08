@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <title>Website</title>
+</head>
+<body>
+  <div id="animate-area">
+    <div class="wrapper">
+    <ul class="texts">
+        <button type="button" class="btn bg-transparent"><li class="vertical"></i>HOME</li></button>
+        <button type="button" class="btn bg-transparent"><li class="vertical">FAQs</li></button>
+        <button type="button" class="btn bg-transparent"><li class="vertical">CONTACT</li></button>
+        <button type="button" class="btn bg-transparent"><li>USD</li></button>
+      </ul>
+      <div class="social ">
+        <button type="button" class="btn bg-transparent"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="fa fa-pinterest-p" aria-hidden="true"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="fa fa-phone" aria-hidden="true"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <hr class="line">
+    <div class="header">
+    <h1 style="font-size:30px; ">canvas</h1>
+    </div>
+    <div class="home">
+   
+<button type="button" class="btnF bg-transparent"><i class="fa fa-home" aria-hidden="true"></i>HOME</button>
+<button type="button" class="btnH bg-transparent btn-outline-white"><i class="fa fa-plane" aria-hidden="true"></i>FLIGHTS</button>
+<button type="button" class="btnH bg-transparent"><i class="fa fa-building" aria-hidden="true"></i>HOTELS</button>
+<button type="button" class="btnH bg-transparent"><i class="fa fa-university" aria-hidden="true"></i>HOLIDAYS</button>
+<button type="button" class="btnH bg-transparent"><i class="fa fa-pencil" aria-hidden="true"></i>BLOG</button>
+<button type="button" class="btnH bg-transparent"><i class="fa fa-phone" aria-hidden="true"></i>1800 105 2541</button>
+
+  </div>
+
+    <div id="main_content">
+    
+      <li class="selected" id="page1" onclick="change_tab(this.id);"><i class="fa fa-plane" aria-hidden="true"></i>Flights</li>
+      <li class="notselected" id="page2" onclick="change_tab(this.id);"><i class="fa fa-building" aria-hidden="true"></i>Hotels</li>
+      <li class="notselected" id="page3" onclick="change_tab(this.id);">Flights+Hotels<button type="button" class="btn4  btn-xs">Save</button></li>
+      <li class="notselected" id="page4" onclick="change_tab(this.id);"><i class="fa fa-university" aria-hidden="true"></i>Holidays</li>
+
+    
+      <div class='hidden_desc' id="page1_desc">
+        
+        <div class="d-flex p-2 font-weight-bold " id="heading" style="font-size:15px;">BOOK YOUR FLIGHTS</div>
+        
+        <div class="btn-group d-flex flex-row-reverse" role="group" >
+          <button type="button" class="btn1 btn-secondary">internationa</button>
+          <button type="button" class="btn2 btn-secondary">Domestic</button>
+        
+        </div>
+        <form class="needs-validation" novalidate>
+          <div class="d-flex form-row ">
+            <div class="col-md-6 mb-3 " id="from">
+              <label for="validationCustom01">FROM</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="E.g Melbourne Australia" value=""
+                required>
+        
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom02">TO</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="E.g New York, United States" value=""
+                required>
+        
+            </div>
+        
+        
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom03">DEPATURE</label>
+              <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" placeholder="MM/DD/YYYY" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom04">RETURN</label>
+              <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" placeholder="MM/DD/YYYY" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 ">
+              <label for="validationCustom05">ADULTS</label>
+              <input type="text" class="form-control d-flex flex-row-reverse" id="validationCustom05" placeholder="2" required>
+        
+            </div>
+          </div>
+        
+          <button class="btn3 btn btn-danger" type="submit">SEARCH
+            FLIGHTS</button>
+          <a href="#" class="d-flex flex-row-reverse font-italic font-weight-bold">Advanced Search</a>
+        </form>
+        
+        </div>
+      
+        
+      <div class='hidden_desc' id="page2_desc">
+        <h2>Hotels</h2>
+      See high fidelity design below. Please convert this into your own HTML, CSS and JavaScript for review. The goal is to
+      showcase your abilities.
+      </div>
+    
+      <div class='hidden_desc' id="page3_desc">
+        <h2>Flights+Hotels</h2>
+        See high fidelity design below. Please convert this into your own HTML, CSS and JavaScript for review. The goal is to
+        showcase your abilities.
+      </div>
+
+      <div class='hidden_desc' id="page4_desc">
+        <h2>Holiday</h2>
+        See high fidelity design below. Please convert this into your own HTML, CSS and JavaScript for review. The goal is to
+        showcase your abilities.
+      </div>
+    
+      <div id="page_content">
+        
+        <div class="d-flex p-2 font-weight-bold">BOOK YOUR FLIGHTS</div>
+        
+        
+        <div class="btn-group d-flex flex-row-reverse" role="group" aria-label="Basic example">
+          <button type="button" class="btn1 btn-secondary">internationa</button>
+          <button type="button" class="btn2 btn-secondary">Domestic</button>
+        
+        </div>
+        <form class="needs-validation" novalidate>
+          <div class=" d-flex form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom01">FROM</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="E.g Melbourne Australia" value=""
+                required>
+        
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom02">TO</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="E.g New York, United States" value=""
+                required>
+        
+            </div>
+        
+        
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom03">DEPATURE</label>
+              <div class='input-group date' id='datetimepicker6'>
+                <input type='text' class="form-control" placeholder="MM/DD/YYYY" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom04">RETURN</label>
+              <div class='input-group date' id='datetimepicker7'>
+                <input type='text' class="form-control" placeholder="MM/DD/YYYY" />
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3 ">
+              <label for="validationCustom05">ADULTS</label>
+              <input type="text" class="form-control d-flex flex-row-reverse" id="validationCustom05" placeholder="2" required>
+        
+            </div>
+          </div>
+        
+          <button class="btn3 btn btn-danger" type="submit">SEARCH FLIGHTS</button>
+          <a href="#" class="d-flex flex-row-reverse font-italic font-weight-bold">Advanced Search</a>
+        </form>
+        
+        </div>
+      
+      </div>
+      </div>
+       
+      </div>
+</body>
+</html>
