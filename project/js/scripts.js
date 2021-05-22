@@ -69,4 +69,7 @@
     //     }
     // });
 
+     $('.carousel').carousel();
+
+
 })(jQuery); // End of use strict

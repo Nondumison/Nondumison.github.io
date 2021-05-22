@@ -2160,6 +2160,13 @@ select.form-control:focus::-ms-value {
   font-size: inherit;
   line-height: 1.5;
 }
+/* #paragraph1 {
+  color: #28a745;
+  text-size-adjust: bold;
+} */
+#button1 {
+  color: #fff;
+}
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
@@ -6533,6 +6540,10 @@ button.bg-primary:focus {
   background-color: #28a745 !important;
 }
 
+.bg-dark {
+  background-color: #17a2b8 !important;
+}
+
 .bg-secondary {
   background-color: #6c757d !important;
 }
@@ -6600,7 +6611,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #17a2b8 !important;
 }
 
 a.bg-dark:hover,
@@ -10547,7 +10558,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/bg-masthead5.jpg");
+  background: url("../assets/img/back2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10580,3 +10591,5 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+/* new code*/
