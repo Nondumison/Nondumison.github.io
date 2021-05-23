@@ -6530,18 +6530,19 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #28a745 !important;
+  background-color: #323332 !important;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #28a745 !important;
+  /* background-color: #28a745 !important; */
+  background-color: #56595a;
 }
 
 .bg-dark {
-  background-color: #17a2b8 !important;
+  background-color: #56595a !important;
 }
 
 .bg-secondary {
@@ -6611,7 +6612,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #17a2b8 !important;
+  background-color: #585b5c !important;
 }
 
 a.bg-dark:hover,
@@ -10558,12 +10559,12 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/back2.jpg");
-  background-position: center;
+  /* background: url("../assets/img/back2.jpg"); */
+  /* background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0.9; */
 }
 header.masthead h1 {
   font-size: 2.25rem;
@@ -10593,3 +10594,24 @@ header.masthead h1 {
 }
 
 /* new code*/
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+#myheader {
+  padding-top: 0px;
+}
+.carousel-item.active {
+  display: block;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
