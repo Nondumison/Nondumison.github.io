@@ -6542,7 +6542,7 @@ button.bg-primary:focus {
 }
 
 .bg-dark {
-  background-color: #56595a !important;
+  background-color: #323332 !important;
 }
 
 .bg-secondary {
@@ -10566,7 +10566,7 @@ hr.light {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 /* .carousel-caption h1 {
   font-size: 2.25rem;
